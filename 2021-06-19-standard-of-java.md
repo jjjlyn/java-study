@@ -3,7 +3,7 @@
 ## 1.6 Arrays
 1. 배열의 복사 : `copyOf()`
     - 참조형의 경우 **얕은 복사** : 참조형의 필드(element)는 주소값만 복사되기 때문에 원본과 같은 객체를 참조하게 됨<br>
-    <img src="https://raw.githubusercontent.com/jjjlyn/java-study/main/shallow_copy.png" width="320" height="180">
+    <img src="https://raw.githubusercontent.com/jjjlyn/java-study/main/shallow_copy.png" width="640" height="360">
 
 2. 배열 채우기 : `fill()`, `setAll()`
    ```java
@@ -125,7 +125,9 @@
 
 ## 1.8 HashSet
 - 내부 구조
-    - Separate Chaining 방식 (Java 1.8 ~ )
+    - Separate Chaining 방식 (Java 1.8 ~ )<br>
+    <img src="https://raw.githubusercontent.com/jjjlyn/java-study/main/hash_collision.png" width="640" height="360"><br>
+    <img src="https://raw.githubusercontent.com/jjjlyn/java-study/main/hash_structure.png" width="360" height="640">
 
 - 저장 순서가 유지되지 않음 (cf. 순서 보장 : LinkedHashSet을 사용) : HashMap 내부 Buckets라는 `Node<K, V>[]`이 K의 hash를 기준으로 배열 인덱싱을 하기 때문에 add, remove등의 연산에 의해 매번 순서가 달라질 수 있다.
 - 중복 허용하지 않음 : `add()`와 `remove()`를 뜯어보자
