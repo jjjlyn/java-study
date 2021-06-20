@@ -126,7 +126,7 @@
 ## 1.8 HashSet
 - 내부 구조
     - Separate Chaining 방식 (Java 1.8 ~ )<br>
-    <img src="https://raw.githubusercontent.com/jjjlyn/java-study/main/hash_collision_2.png" width="640" height="360"><br>
+    <img src="https://raw.githubusercontent.com/jjjlyn/java-study/main/hash_collision_2.png" width="1280" height="720"><br>
     <img src="https://raw.githubusercontent.com/jjjlyn/java-study/main/hash_collision.png" width="640" height="360"><br>
     <img src="https://raw.githubusercontent.com/jjjlyn/java-study/main/hash_structure.png" width="360" height="640">
 
