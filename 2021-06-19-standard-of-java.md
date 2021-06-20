@@ -126,6 +126,9 @@
 ## 1.8 HashSet
 - 내부 구조
     - Separate Chaining 방식 (Java 1.8 ~ )<br>
+    - initial value : 16!! -> Bucket Indexing 할 때 왜 `16 - 1 ^ Hash값` 연산을 하는가?
+        - 15가 이진수로 1111이기 때문에 `& 연산`을 하면 항상 결과값이 0 ~ 15로 나온다. (실제로 0 ~ 15 사이의 숫자와 1111이 & 연산을 하면 항상 자기 자신이 결과로 나옴!!)
+        - Buckets은 75%가 차면 size가 두배로 증가(32) -> 버킷 인덱싱은 11111 (31)과 & 연산을 하여 구하게 될 것
     <img src="https://raw.githubusercontent.com/jjjlyn/java-study/main/hash_collision_2.png" width="1280" height="720"><br>
     <img src="https://raw.githubusercontent.com/jjjlyn/java-study/main/hash_collision.png" width="640" height="360"><br>
     <img src="https://raw.githubusercontent.com/jjjlyn/java-study/main/hash_structure.png" width="360" height="640">
